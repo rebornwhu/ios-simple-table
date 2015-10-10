@@ -16,6 +16,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let simpleTableIdentifier = "SimpleTableIdentifier"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dwarves.count
     }
@@ -40,17 +50,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         cell!.textLabel!.text = dwarves[indexPath.row]
+        cell!.textLabel?.font = UIFont.boldSystemFontOfSize(50)
         return cell!
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
@@ -77,5 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         presentViewController(controller, animated: true, completion: nil)
     }
 
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return indexPath.row == 0 ? 120 : 70
+    }
 }
 
