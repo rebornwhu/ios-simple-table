@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="anT-cN-HYK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -29,7 +29,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="anT-cN-HYK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="50W-Tv-vY7"/>
+                            <constraint firstItem="anT-cN-HYK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="50W-Tv-vY7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="anT-cN-HYK" secondAttribute="bottom" id="Dw8-bD-t4g"/>
                             <constraint firstAttribute="trailing" secondItem="anT-cN-HYK" secondAttribute="trailing" id="XgF-3L-U4H"/>
                             <constraint firstItem="anT-cN-HYK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fql-7S-eAm"/>
